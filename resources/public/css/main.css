@@ -1,0 +1,35 @@
+h1 {
+    color: #34495e;
+}
+
+.todo__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.todo__add {
+    margin: 30px;
+}
+
+.center {
+    justify-content: center;
+}
+
+.todo__add-form {
+    margin-right: 20px;
+}
+
+.todo__list {
+    margin: 20px;
+}
+
+button.todo__button {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+button.todo__button--red {
+    background: rgb(202, 60, 60);
+}
