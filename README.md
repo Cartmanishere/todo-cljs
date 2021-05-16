@@ -1,7 +1,15 @@
 # todo-cljs
 
-A [re-frame](https://github.com/day8/re-frame) application designed to ... well, that part is up to
-you.
+A toy [re-frame](https://github.com/day8/re-frame) application to add todos on a page
+and delete them.
+
+This is a toy project developed for the sake of exploring Clojurescript and Re-frame.
+
+[todo-cljs-dev](https://todo-cljs-dev.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/29afb8cc-e8db-46c0-bd6f-212437bfc008/deploy-status)](https://app.netlify.com/sites/todo-cljs-dev/deploys)
+
+[todo-cljs-prod](https://todo-cljs.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e5e0509-7277-4506-be92-77464814056a/deploy-status)](https://app.netlify.com/sites/todo-cljs/deploys)
 
 ## Getting Started
 
@@ -24,29 +32,6 @@ you.
   - Emacs integration: [CIDER](https://github.com/clojure-emacs/cider)
   - Linter: [clj-kondo](https://github.com/borkdude/clj-kondo)
 
-#### Directory structure
-
-* [`/`](/../../): project config files
-* [`.clj-kondo/`](.clj-kondo/): lint config and cache files (cache files are not tracked; see
-[`.gitignore`](.gitignore))
-* [`dev/`](dev/): source files compiled only with the [dev](#running-the-app) profile
-  - [`user.cljs`](dev/cljs/user.cljs): symbols for use during development in the
-[ClojureScript REPL](#connecting-to-the-browser-repl-from-a-terminal)
-* [`resources/public/`](resources/public/): SPA root directory;
-[dev](#running-the-app) / [prod](#production) profile depends on the most recent build
-  - [`index.html`](resources/public/index.html): SPA home page
-    - Dynamic SPA content rendered in the following `div`:
-        ```html
-        <div id="app"></div>
-        ```
-    - Customizable; add headers, footers, links to other scripts and styles, etc.
-  - Generated directories and files
-    - Created on build with either the [dev](#running-the-app) or [prod](#production) profile
-    - `js/compiled/`: compiled CLJS (`shadow-cljs`)
-      - Not tracked in source control; see [`.gitignore`](.gitignore)
-* [`src/todo_cljs/`](src/todo_cljs/): SPA source files (ClojureScript,
-[re-frame](https://github.com/Day8/re-frame))
-  - [`core.cljs`](src/todo_cljs/core.cljs): contains the SPA entry point, `init`
 
 ### Editor/IDE
 
